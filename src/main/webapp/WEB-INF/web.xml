@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app metadata-complete="false" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>AplikacjaWebowaRunnerMaven</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errorserver.jsp</location>
+    </error-page>
+    
+    <servlet>
+        <servlet-name>AddArticle</servlet-name>
+        <servlet-class>Controller.AddArticle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddArticle</servlet-name>
+        <url-pattern>/SaveArticle</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddHeader</servlet-name>
+        <servlet-class>Controller.AddHeader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddHeader</servlet-name>
+        <url-pattern>/AddHeader</url-pattern>
+    </servlet-mapping>
+    
+   <servlet>
+        <servlet-name>ChangePassword</servlet-name>
+        <servlet-class>Controller.ChangePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangePassword</servlet-name>
+        <url-pattern>/ChangePassword</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ChangeEventParameters</servlet-name>
+        <servlet-class>Controller.ChangeEventParameters</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeEventParameters</servlet-name>
+        <url-pattern>/ChangeEventParameters</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddUserToSelectedEvent</servlet-name>
+        <servlet-class>Controller.AddUserToSelectedEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUserToSelectedEvent</servlet-name>
+        <url-pattern>/AddUserToSelectedEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ChangeUserParameters</servlet-name>
+        <servlet-class>Controller.ChangeUserParameters</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeUserParameters</servlet-name>
+        <url-pattern>/ChangeUserParameters</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ChangeUserPermission</servlet-name>
+        <servlet-class>Controller.ChangeUserPermission</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeUserPermission</servlet-name>
+        <url-pattern>/ChangeUserPermission</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteChosenArticleheader</servlet-name>
+        <servlet-class>Controller.DeleteChosenArticleheader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteChosenArticleheader</servlet-name>
+        <url-pattern>/DeleteChosenArticleheader</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteHeaders</servlet-name>
+        <servlet-class>Controller.DeleteHeaders</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteHeaders</servlet-name>
+        <url-pattern>/DeleteHeaders</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteUsersFromEvent</servlet-name>
+        <servlet-class>Controller.DeleteUsersFromEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteUsersFromEvent</servlet-name>
+        <url-pattern>/DeleteUsersFromEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteYourselfFromEvent</servlet-name>
+        <servlet-class>Controller.DeleteYourselfFromEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteYourselfFromEvent</servlet-name>
+        <url-pattern>/DeleteYourselfFromEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditArticleheader</servlet-name>
+        <servlet-class>Controller.EditArticleheader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditArticleheader</servlet-name>
+        <url-pattern>/EditArticleheader</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditDeleteCurrentUser</servlet-name>
+        <servlet-class>Controller.EditDeleteCurrentUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditDeleteCurrentUser</servlet-name>
+        <url-pattern>/EditDeleteCurrentUser</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet>
+        <servlet-name>EditHeaders</servlet-name>
+        <servlet-class>Controller.EditHeaders</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditHeaders</servlet-name>
+        <url-pattern>/EditHeaders</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditNumbersInEvent</servlet-name>
+        <servlet-class>Controller.EditNumbersInEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditNumbersInEvent</servlet-name>
+        <url-pattern>/EditNumbersInEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>JoinPictureToEventUsers</servlet-name>
+        <servlet-class>Controller.JoinPictureToEventUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JoinPictureToEventUsers</servlet-name>
+        <url-pattern>/JoinPictureToEventUsers</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UserRedirect</servlet-name>
+        <servlet-class>Controller.UserRedirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserRedirect</servlet-name>
+        <url-pattern>/UserRedirect</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addEvent</servlet-name>
+        <servlet-class>Controller.addEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addEvent</servlet-name>
+        <url-pattern>/addEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addPictureToEvent</servlet-name>
+        <servlet-class>Controller.addPictureToEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addPictureToEvent</servlet-name>
+        <url-pattern>/addPictureToEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deletePictureFromEvent</servlet-name>
+        <servlet-class>Controller.deletePictureFromEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deletePictureFromEvent</servlet-name>
+        <url-pattern>/deletePictureFromEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getEvent</servlet-name>
+        <servlet-class>Controller.joinEvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getEvent</servlet-name>
+        <url-pattern>/joinToEvent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>Controller.logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>Controller.registration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+    
+     <filter>
+        <filter-name>Login</filter-name>
+        <filter-class>Filter.Login</filter-class>
+     </filter>
+     <filter-mapping>
+            <filter-name>Login</filter-name>
+            <url-pattern>/*</url-pattern>
+     </filter-mapping>
+     
+     
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Admina</web-resource-name>
+            <url-pattern>/adminpanel.jsp</url-pattern>
+            <url-pattern>/UserRedirect</url-pattern>
+            <url-pattern>/addEvent.jsp</url-pattern>
+            <url-pattern>/joinEvent.jsp</url-pattern>
+            <url-pattern>/chooseRunnerstoJoinPic.jsp</url-pattern>
+            <url-pattern>/addPicturesToEvent.jsp</url-pattern>
+            <url-pattern>/ListUserPicturesOnCurrentEvent.jsp</url-pattern>
+            <url-pattern>/EditUser.jsp</url-pattern>
+            <url-pattern>/ChangePassword.jsp</url-pattern>
+            <url-pattern>/EditDeleteEventList.jsp</url-pattern>
+            <url-pattern>/EditDeleteUserList.jsp</url-pattern>
+            <url-pattern>/SelectedUserToEdit.jsp</url-pattern>
+            <url-pattern>/EditUserPermission.jsp</url-pattern>
+            <url-pattern>/SelectedUserToEdit.jsp</url-pattern>
+            <url-pattern>/EditUsersNumberInEvent.jsp</url-pattern>
+            <url-pattern>/AddUsersToEvent.jsp</url-pattern>
+            <url-pattern>/addArticle.jsp</url-pattern>
+            <url-pattern>/EditArticle.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Usera</web-resource-name>
+            <description/>
+            <url-pattern>/userpanel.jsp</url-pattern>
+            <url-pattern>/UserRedirect</url-pattern>
+            <url-pattern>/joinEvent.jsp</url-pattern>
+            <url-pattern>/ListUserPicturesOnCurrentEvent.jsp</url-pattern>
+            <url-pattern>/EditUser.jsp</url-pattern>
+            <url-pattern>/ChangePassword.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <role-name>Admin</role-name>
+    </security-role>
+    <security-role>
+        <role-name>User</role-name>
+    </security-role>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/errorlogin.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <url-pattern>*.jspf</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
