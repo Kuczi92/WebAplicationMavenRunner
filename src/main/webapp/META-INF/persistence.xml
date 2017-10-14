@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="AplikacjaWebowaRunnerMavenPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Model.Number</class>
+    <class>Model.Picture</class>
+    <class>Model.Event</class>
+    <class>Model.Role</class>
+    <class>Model.User</class>
+    <class>Controller.Picture</class>
+    <class>Controller.Role</class>
+    <class>Controller.User</class>
+    <class>Controller.Number</class>
+    <class>Controller.Event</class>
+    <class>Model.Articleheader</class>
+    <class>Model.Article</class>
+    <class>Model.Headers</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://172.30.104.158:3306/system"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Parnassus12341!"/>
+    </properties>
+  </persistence-unit>
+</persistence>
